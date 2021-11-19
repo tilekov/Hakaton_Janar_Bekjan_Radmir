@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png">
+    <title>Kyrgyz Twitter</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="header">
+      <div class="container">
+        <div class="menu">
+          <a class="logo2" href="./index.html">
+            <span class="logo">Kyrgyz Twitter</span>
+          </a>
+          <img class="loupe" src="./img/loupe.png" alt="" />
+          <input class="search-inp" type="text" placeholder="Поиск" />
+          <img
+            class="colocol"
+            src="./img/free-icon-notification-bell-77682.png"
+            alt=""
+          />
+        </div>
+        <div>
+            <button class="exit">Выйти</button>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- content start-->
+    <div class="middle">
+      <div class="container">
+        <div class="navbar">
+          <a class="glavnoe" href="./index.html">
+            <img class="home" src="./img/free-icon-home-1946436.png" alt="" />
+            <p>Главная</p>
+          </a>
+          <div class="my-str">
+            <img class="home" src="./img/user.png" alt="" />
+            <p>Моя страница</p>
+          </div>
+          <div class="messanger">
+            <img class="home" src="./img/messenger.png" alt="" />
+            <p>Мессенджер</p>
+          </div>
+          <div class="music">
+            <img class="home" src="./img/music.png" alt="" />
+            <a class="mus">
+              <p>Музыка</p>
+            </a>
+          </div>
+          <div class="video">
+            <img class="home" src="./img/play-button.png" alt="" />
+            <a class="vid" href="https://www.youtube.com/">
+              <p>Видео</p>
+            </a>
+          </div>
+          <div class="image">
+            <img class="home" src="./img/insert-picture-icon.png" alt="" />
+            <p>Фотографии</p>
+          </div>
+        </div>
+        <div class="post">
+          <!-- <input class="inp_post" type="text" placeholder="Что нового?" /> -->
+          <div class="heading">
+          <h3 class="question">Do you want to add post?</h3>
+          <button class="open-btn">Yes</button>
+          </div>
+          <div class="history">
+            <ul class="posts_list"></ul>
+            <button class="previous-btn">Prev</button>
+            <button class="next-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content end -->
+
+    <!-- ----------------------------------------- Модалка 1 --------------------- -->
+    <div id="my_modal" class="modal">
+      <div class="modal_content">
+        <span class="close_modal_window">×</span>
+        <div class="edit-post">
+          <input type="text" class="edit-inp" />
+          <button class="btn-save">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------- Модалка 2 --------------------- -->
+    <div id="my_modal2" class="modal">
+      <div class="modal_content">
+        <span class="close_modal_window">×</span>
+        <div class="info">
+          <h1>Lorem, ipsum.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            ipsa officia in, laudantium corrupti saepe facilis nihil, libero
+            impedit soluta eius? Aliquid fuga quos suscipit nostrum architecto
+            ex minima non?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------- Модалка 3 --------------------- -->
+    <div id="my_modal3" class="modal">
+      <div class="modal_content">
+        <span class="close_modal_window">×</span>
+        <div class="info">
+            <input class="inp_post" type="text" placeholder="Что нового?" />
+            <button id="add_btn">Опубликовать</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

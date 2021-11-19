@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap&family=Train+One&display=swap'");
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    padding-bottom: 30px;
+}
+.navbar {
+    margin-top: 20px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Train One", cursive;
+}
+.logo2 {
+    text-decoration: none;
+    color: black;
+}
+.vid {
+    text-decoration: none;
+    color: black;
+}
+.mus {
+    text-decoration: none;
+    color: black;
+}
+.ex {
+    text-decoration: none;
+    color: black;
+}
+.search-inp {
+    margin-left: 168px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    display: none;
+}
+.loupe {
+    width: 35px;
+    height: 35px;
+    margin-left: 250px;
+}
+.colocol {
+    width: 35px;
+    height: 35px;
+    margin-left: 100px;
+}
+.middle {
+    background-image: url("../img/email-pattern.png");
+    height: 950px;
+}
+
+.post {
+    margin-left: 50px;
+    padding-top: 10px;
+    width: 500px;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-btn {
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: rgb(59, 59, 255);
+    color: white;
+    border-radius: 15px;
+}
+
+.inp_post {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.edit-inp {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* .info {
+    display: flex;
+} */
+
+.question {
+    font-size: 30px;
+}
+
+.history {
+    /* background-color: rgb(240, 240, 240); */
+    background-image: url("../img/email-pattern.png");
+}
+
+
+.btn-save {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    height: 25px;
+    background-color: rgb(59, 59, 255);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#add_btn {
+    display: flex;
+    height: 25px;
+    background-color: rgb(59, 59, 255);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+/* .history {
+    height: 100%;
+    background-color: white;
+} */
+
+.glavnoe {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.home {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.my-str {
+    display: flex;
+}
+
+.my-str:hover {
+    cursor: pointer;
+}
+
+.messanger {
+    display: flex;
+}
+
+.messanger:hover {
+    cursor: pointer;
+}
+
+.music {
+    display: flex;
+}
+
+.music:hover {
+    cursor: pointer;
+}
+.video {
+    display: flex;
+}
+.image {
+    display: flex;
+}
+.image:hover {
+    cursor: pointer;
+}
+.exit {
+    margin-left: 160px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ------------------ Модалка ---------------------------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.exit{
+    border: 1px solid black;
+    background-color: grey;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+.previous-btn {
+    background-color: rgb(180, 180, 209);
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+.next-btn {
+    background-color: rgb(180, 180, 209);
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 950px) {
+    .inp_post {
+        width: 70%;
+        height: 50px;
+        flex-direction: column;
+    }
+    .add_btn {
+        margin-left: 240px;
+        flex-direction: column;
+    }
+    .history {
+        width: 355px;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 750px) {
+    .inp_post {
+        width: 50%;
+        flex-direction: column;
+    }
+    .add_btn {
+        margin-left: 120px;
+        flex-direction: column;
+    }
+    .history {
+        width: 250px;
+        flex-direction: column;
+    }
+    p {
+        font-size: 13px;
+        flex-direction: column;
+    }
+    .home {
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 360px) {
+    .search-inp {
+        margin-left: 83px;
+        width: 155px;
+        height: 25px;
+        flex-direction: column;
+    }
+    .colocol {
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    .add_btn {
+        margin-left: 0px;
+        width: 54px;
+        font-size: 5px;
+        height: 15px;
+        flex-direction: column;
+    }
+    p {
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .home {
+        width: 20px;
+        height: 20px;
+        flex-direction: column;
+    }
+    .inp_post {
+        width: 50%;
+        height: 30px;
+        flex-direction: column;
+    }
+    .search-inp {
+        margin-left: 38px;
+        width: 125px;
+        flex-direction: column;
+    }
+    .colocol {
+        width: 25px;
+        height: 25px;
+        flex-direction: column;
+    }
+    .history {
+        width: 155px;
+        flex-direction: column;
+    }
+    .menu {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 411px) {
+    .search-inp {
+        margin-left: 90px;
+        width: 155px;
+        height: 30px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .inp_post {
+        width: 35%;
+        height: 40px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .history {
+        width: 180px;
+        flex-direction: column;
+    }
+    p {
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .home {
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+    }
+    @media all and (max-width: 320px) {
+        .history {
+            width: 125px;
+            flex-direction: column;
+        }
+        .search-inp {
+            margin-left: 49px;
+            width: 96px;
+            height: 30px;
+            border-radius: 10px;
+            flex-direction: column;
+        }
+        .inp_post {
+            width: 50%;
+            height: 25px;
+            border-radius: 10px;
+            margin-bottom: 0px;
+            flex-direction: column;
+        }
+        .home {
+            width: 25px;
+            height: 25px;
+            flex-direction: column;
+        }
+    }
+}
+@media all and (max-width: 375px) {
+    .search-inp {
+        margin-left: 70px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .colocol {
+        width: 35px;
+        height: 35px;
+        margin-left: 40px;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 414px) {
+    .p {
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .inp_post {
+        width: 30%;
+        flex-direction: column;
+    }
+    .history {
+        width: 150px;
+        flex-direction: column;
+    }
+}
+
+
